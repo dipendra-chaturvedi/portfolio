@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    display: flex;
+}
+.sidebar{
+    background-color: black;
+    /* border: 2px solid white ; */
+    height: 250vh;
+    font-family: "Oxanium", sans-serif;
+    /* padding: 10px 20px; */
+    transition: transform 0.3s ease-in;
+    position: absolute;
+}
+.sidebar h1{
+   text-align: center;
+    color: #339AF0;
+    /* border: 1px solid white; */
+    padding: 10px 50px;
+}
+.sidebar nav{
+    /* border: 2px solid white; */
+    padding: 20px 30px ;
+    height: 88vh;
+}
+.sidebar nav li{
+    /* border: 1px solid  white; */
+    list-style: none;
+    padding: 30px 20px ;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.main{
+    /* border: 1px solid; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    /* margin: auto; */
+}
+.infoContainer{
+    /* border: 1px solid; */
+    height: 60vh;
+    width: 100%;
+    margin: 130px 160px;
+    /* flex-wrap: wrap; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.devInfo{
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    font-family: "Source Code Pro", monospace;  
+}
+.hello{
+    font-size: 4.5em;
+}
+.name{
+    font-size: 3.5em;
+    font-weight: bold;
+    font-family: "Oxanium", sans-serif;
+}
+.about{
+    font-size: 2.5em;
+}
+.aboutmore{
+    font-size: 1.5em;
+}
+#element1{
+    color: #339AF0;
+}
+#element2{
+    color: #339AF0;
+}
+.buttons{
+    /* border: 1px solid; */
+    margin: 15px 2px;
+    
+}
+.btn{
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 10px 10px;
+    background-color: #339AF0;
+    color: white;
+    font-family: "Source Code Pro", monospace;
+    cursor: pointer;
+    font-weight: bold;
+    width: 140px;
+}
+.btn:hover{
+    background-color:white ;
+    color: #339AF0;
+}
+.btn-sm{
+    font-size: 15px;
+    width: 110px;
+}
+.devPic{
+    /* border: 1px solid; */
+    width: 30vw;
+    display: flex;
+    align-items: center;
+}
+.devPic img{
+    /* border: 1px solid; */
+    width: 30vw;
+
+}
+
+
+/* contact css */
+.contactform{
+    /* border: 1px solid; */
+    font-family: "Source Code Pro", monospace;
+    margin: 80px 80px;
+    align-items: flex-start;
+    width: 200vh;
+}
+.contactform h1{
+    /* border: 1px solid; */
+    font-family: "Oxanium", sans-serif;
+    color: #339AF0;
+    padding: 10px 0px ;
+}
+.contactform form{
+    /* border: 1px solid; */
+    margin: 10px 0px;
+    
+    
+}
+.contactform div{
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.lbl{
+    font-size: 16px;
+    font-family: "Source Code Pro", monospace;
+}
+.i5{
+    width:300px;
+    height: 20px;
+}
+
+
+#emailHelp{
+    font-size: 12px;
+    color: #339AF0;
+}
+#form-check{
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 20px 0px;
+    
+}
+#form-check input{
+    /* border: 1px solid; */
+    height: 15px;
+    margin: 0px 5px;  
+}
+
+
+/* services css */
+.serviceContainer{
+    /* border: 1px solid; */
+    margin: 80px 80px;
+}
+.serviceContainer h1{
+    /* border: 1px solid; */
+    font-family: "Oxanium", sans-serif;
+    margin: 20px 20px;
+    color: #339AF0;
+}
+.serviceItem{
+    /* border: 1px solid; */
+    margin: 20px 20px;
+    font-family: "Source Code Pro", monospace;
+}
+.serviceItem h2{
+    /* border: 1px solid; */ 
+    font-family: "Oxanium", sans-serif;
+}
+.serviceItem p{
+    /* border: 1px solid; */
+    margin: 5px 0px;
+}
+
+
+/* blog css */
+.blogContainer{
+    /* border: 1px solid; */
+    margin: 80px 80px;
+}
+.blogContainer h1{
+    /* border: 1px solid; */
+    font-family: "Oxanium", sans-serif;
+    margin: 20px 20px;
+    color: #339AF0;  
+}
+.blogItem{
+    /* border: 1px solid; */
+    margin: 20px 20px;
+    font-family: "Source Code Pro", monospace;
+}
+.blogItem h2{
+    /* border: 1px solid; */ 
+    font-family: "Oxanium", sans-serif;
+}
+.blogItem p{
+    /* border: 1px solid; */
+    margin: 15px 0px;
+}
+
+
+
+/* about me css */
+.devIntro{
+    /* border: 1px solid; */
+    margin: 80px 80px;
+}
+.devIntro h1{
+    /* border: 1px solid; */
+    margin: 20px 0px;
+    color: #339AF0;
+    font-family: "Oxanium", sans-serif;
+}
+.devIntro h2{
+    /* border: 1px solid; */
+    margin: 20px 0px;
+    font-family: "Oxanium", sans-serif;
+}
+.devIntro p{
+    /* border: 1px solid; */
+    margin: 20px 0px;
+    font-family: "Source Code Pro", monospace;
+}
+
+.skillContainer{
+    /* border: 1px solid; */
+    margin: 20px 0px;
+}
+.skill{
+    font-family: "Source Code Pro", monospace;
+    margin: 20px auto;
+    
+}
+.skillBar{
+    width: 50vh;
+    height: 10px;
+    background-color: #339AF0;
+}
+
+.p8{
+    width: 15em;
+    height: 10px;
+    background-color: #2169a5; 
+}
+.p5{
+    width: 10em;
+    height: 10px;
+    background-color: #2c87d1;
+}
+.p4{
+    width: 40vh;
+    height: 10px;
+    background-color: #65b6f8;  
+}
+.p2{
+    width: 25vh;
+    height: 10px;
+    background-color: #a2c6e4;  
+}
+.p1{
+    width: 10vh;
+    height: 10px;
+    background-color: #339AF0;
+}
+
+/* education css */
+.educationContainer{
+    /* border: 1px solid;  */
+    margin: 30px 0px;
+}
+.educationInfo{
+    /* border: 1px solid;  */
+    display: flex;
+    justify-content:flex-start;
+}
+.collegeImg{
+    /* border: 1px solid;  */
+} 
+.collegeImg img{
+    border: 1px solid ; 
+    /* border-radius: 100px; */
+    width:140px;
+} 
+.collegeName{
+    /* border: 1px solid;    */
+    margin:0px 10px;
+}
+.collegeName h2{
+    color: #2c87d1;
+    margin: 0;
+}   
+.collegeName h3{
+    margin: 0;
+    font-family: "Oxanium", sans-serif;
+
+}   
+.collegeName p{
+    color: black;
+    margin: 0;  
+}
+
+
+/* hambarger css */
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 15px;
+}
+.cross{
+    margin-left: 130px;
+}
+
+.sidebarGo{
+    transform: translate(-250px, 0px);
+    position: absolute;
+}
+
+@media (max-width: 1100px) {
+
+    .main{
+        height: auto;
+    }
+    .infoContainer{
+       height: auto;
+       margin: 90px 20px;
+    }
+    .devInfo{
+        margin: 30px;
+    }
+    .hello{
+        font-size: 3em;
+    }
+    .name{
+        font-size: 2.5em;
+    }
+    .about{
+        font-size: 1.5em;
+    }
+    .aboutmore{
+        font-size: 1em;
+    }
+    .btn{
+        font-size: 12px;
+        width: 120px;
+    }
+    .devPic img{
+        /* display: none; */
+        width: 30vw;
+    }
+    .collegeImg{
+        border: 1px solid; 
+        display: none;
+    } 
+    .collegeName{
+        /* border: 1px solid;    */
+        margin:0px 0px;
+    }
+    .contactform{
+        margin: 80px 30px;
+    }
+    .contactform form{
+       padding: 5px 5px;
+    }
+    .serviceContainer{
+        margin: 50px 30px;
+    }
+    .blogContainer{
+        margin: 50px 30px;
+    }
+}
+
+
+@media (max-width: 745px) {
+    .main{
+        height: auto;
+    }
+    .infoContainer{
+       height: auto;
+       margin: 90px 30px;
+       flex-direction: column-reverse;
+    }
+    .devInfo{
+        margin-top: 0px;
+    }
+    .hello{
+        font-size: 3em;
+    }
+    .name{
+        font-size: 2.5em;
+    }
+    .about{
+        font-size: 1.5em;
+    }
+    .aboutmore{
+        font-size: 1em;
+    }
+    .btn{
+        font-size: 12px;
+        width: 120px;
+    }
+    .devPic{
+        /* display: none; */
+        margin: 10px 10px;
+        width: 45vw;
+    }
+    .devPic img{
+        width: 45vw;
+    }
+    .contactform{
+        margin: 80px 30px;
+    }
+    .contactform form{
+       padding: 5px 5px;
+    }
+    .serviceContainer{
+        margin: 50px 30px;
+    }
+    .blogContainer{
+        margin: 50px 30px;
+    }
+}

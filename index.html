@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar sidebarGo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about me</a></li>
+                    <li><a href="services.html">services</a></li>
+                    <li><a href="blog.html">blog</a></li>
+                    <li><a href="contact.html">contact me</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="hamburger">
+                <img src="img/ham.png" class="ham" width="30px" alt="">
+                <img src="img/cross.png" class="cross" width="30px" alt="">
+            </div>
+            <div class="infoContainer">
+                <div class="devInfo">
+                    <div class="hello">Hello I am </div>
+                    <span class="name" id="element1">Andrul</span>
+                    <div class="about">I am Software Developer</div>
+                    <div class="aboutmore">
+                        Skilled with
+                        <span id="element2"></span>
+                    </div>
+                    <div class="buttons">
+                        <a href="docs/cv.txt" target="_blank"><button class="btn">Download CV</button></a>
+                        <a href="contact.html"><button class="btn">Contact Me</button></a>
+                    </div>
+                </div>
+                <div class="devPic">
+                    <img src="img/dev8.png" alt="developer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed1 = new Typed('element1', {
+            strings: ['Andrul'],
+            typeSpeed:150,
+            showCursor: false,
+            loop:true
+        });
+        var typed2 = new Typed('element2', {
+            strings: ['Bootstrap','Php','Javascript'],
+            typeSpeed:150,
+            showCursor: false,
+            loop:true
+        });
+    </script>
+</body>
+</html>
