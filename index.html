@@ -27,7 +27,7 @@
             <div class="infoContainer">
                 <div class="devInfo">
                     <div class="hello">Hello I am </div>
-                    <span class="name" id="element1">Andrul</span>
+                    <span class="name" id="element1"></span>
                     <div class="about">I am Software Developer</div>
                     <div class="aboutmore">
                         Skilled with
@@ -49,18 +49,27 @@
 
     <!-- Setup and start animation! -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+   
     <script>
-        var typed1 = new Typed('element1', {
-            strings: ['Andrul'],
-            typeSpeed:150,
+        var typed1 = new Typed('#element1', {
+            strings: ['Dipendra'],
+            typeSpeed: 150,
             showCursor: false,
-            loop:true
+            loop: true,
+            onComplete: function() {
+                setTimeout(function() {
+                    typed2.start();
+                }, 3000); 
+            }
         });
-        var typed2 = new Typed('element2', {
-            strings: ['Bootstrap','Php','Javascript'],
-            typeSpeed:150,
+    
+        var typed2 = new Typed('#element2', {
+            strings: ['Bootstrap', 'Php', 'Javascript'],
+            typeSpeed: 150,
             showCursor: false,
-            loop:true
+            loop: true,
+            startDelay: 1000,
+            autoStart: false 
         });
     </script>
 </body>
