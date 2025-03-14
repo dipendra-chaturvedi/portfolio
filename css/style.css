@@ -16,36 +16,39 @@
 .container{
     display: flex;
 }
-
-
-
-.sidebar{
+.sidebar {
     background-color: black;
-    /* border: 2px solid white ; */
-    height: 250vh;
+    height: 100vh;
     font-family: "Oxanium", sans-serif;
-    /* padding: 10px 20px; */
     transition: transform 0.3s ease-in;
     position: absolute;
     width: 250px;
 }
 
-.sidebar nav{
-    padding: 80px 30px ;
+.sidebar nav {
+    padding: 80px 30px;
     height: auto;
 }
-.sidebar nav li{
+
+.sidebar nav li {
     list-style: none;
-    padding: 15px 20px ;
+    padding: 15px 20px;
     margin-bottom: 30px;
     border-radius: 10px;
     background-color: #339AF0;
     cursor: pointer;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
-    transition: box-shadow 0.3s ease-in-out; /* Smooth transition */
-
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
-.sidebar nav li a{
+
+/* Zoom and color change on hover */
+.sidebar nav li:hover {
+    transform: scale(1.1); /* Slight zoom */
+    background-color: #1d7bdc; /* Darker blue */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+}
+
+.sidebar nav li a {
     text-decoration: none;
     color: white;
     font-family: "Oxanium", sans-serif;
@@ -54,7 +57,12 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    transition: color 0.3s ease-in-out;
+}
 
+/* Text color change on hover */
+.sidebar nav li:hover a {
+    color: #f1f1f1; /* Slightly lighter white for better contrast */
 }
 
 
@@ -127,16 +135,59 @@
     font-size: 15px;
     width: 110px;
 }
-.devPic{
-    /* border: 1px solid; */
+.devPic {
     width: 30vw;
     display: flex;
     align-items: center;
+    justify-content: center;
+    perspective: 1000px; /* Adds depth for the 3D effect */
 }
-.devPic img{
-    /* border: 1px solid; */
-    width: 30vw;
 
+.devPic img {
+    width: 30vw;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+}
+
+/* 3D Tilt & Shadow Effect on Hover */
+.devPic img:hover {
+    transform: rotateY(15deg) rotateX(5deg) scale(1.05); /* Slight tilt and zoom */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+
+/* Social icons container */
+.social-icons {
+    display: flex;
+    gap: 25px; /* Space between icons */
+    justify-content: flex-start; /* Align to start */
+    margin-top: 20px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 745px) {
+    .social-icons {
+        display: flex;
+        gap: 15px; /* Space between icons */
+        justify-content: center; /* Center align */
+        margin-top: 20px;
+    }
+}
+
+/* Social icons default state */
+.social-icons a {
+    color: #0e0e0e;
+    font-size: 30px;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    display: inline-block;
+}
+
+/* Pop-up and enlarge effect on hover */
+.social-icons a:hover {
+    color: #339AF0; 
+    transform: scale(1.3); 
 }
 
 
