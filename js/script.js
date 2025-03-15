@@ -1,17 +1,24 @@
 console.log("andrul")
 
+const sidebar = document.querySelector('.sidebar');
+const ham = document.querySelector('.ham');
+const cross = document.querySelector('.cross');
+const hamburger = document.querySelector('.hamburger');
 
-document.querySelector('.cross').style.display = 'none';
-document.querySelector('.hamburger').addEventListener('click',()=>{
-    document.querySelector('.sidebar').classList.toggle('sidebarGo')
-    if(document.querySelector('.sidebar').classList.contains('sidebarGo')){
-        document.querySelector('.ham').style.display = 'inline'; 
-        document.querySelector('.cross').style.display = 'none'; 
+cross.style.display = 'none';
+
+hamburger.addEventListener('click',()=>{
+
+    sidebar.classList.toggle('sidebarGo');
+    if(sidebar.classList.contains('sidebarGo')){
+        ham.style.display = 'inline'; 
+        cross.style.display = 'none'; 
     }
     else{
-        document.querySelector('.ham').style.display = 'none ';
+        ham.style.display = 'none';
         setTimeout(()=>{
-            document.querySelector('.cross').style.display = 'inline'; 
+            cross.style.display = 'inline'; 
         },300) 
     }
+
 })
